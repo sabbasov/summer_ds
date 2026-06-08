@@ -19,7 +19,7 @@ gpu_out = torch.empty(size, size, dtype=torch.half, device='mps')
 
 # OPTIMIZATION 2: Define a compiled function for the GPU math
 @torch.compile
-def optimized_gpu_matmul(A, B, out_space):
+def optimized_gpu_matmul(A, B, out_space) -> :
     return torch.matmul(A, B, out=out_space)
 
 # --- Warmup ---
