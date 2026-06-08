@@ -1,8 +1,8 @@
-def derivative(x):
+def derivative(x: float) -> float:
     # Return the derivative of f(x) = x^2 -4x + 4
     return 2 * x - 4
 
-def run_gradident_descent(current_x, learning_rate, iterations):
+def run_gradident_descent(current_x: float, learning_rate: float, iterations: int) -> None:
 
     print(f"Starting gradient descent at x = {current_x}")
     
